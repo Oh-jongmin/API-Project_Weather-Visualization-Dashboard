@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>대한민국 산불 발생 지도</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+  <style>
+    body { margin: 0; font-family: sans-serif; background: #f4f6f8; }
+    #map { height: 90vh; }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h2 { margin: 0; font-size: 1.2em; }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .toolbar select, .toolbar button {
+      padding: 6px 12px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>🔥 대한민국 실시간 산불 발생 지도 (NASA FIRMS)</h2>
+    <div class="toolbar">
+      <label for="filterSelect">⏱ 기간 선택</label>
+      <select id="filterSelect">
+        <option value="1">24시간</option>
+        <option value="3">3일</option>
+        <option value="7" selected>7일</option>
+        <option value="30">30일</option>
+      </select>
+      <button id="goWeatherBtn">🌦 기상 정보로 이동</button>
+    </div>
+  </header>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="/static/js/fires_map_korea.js"></script>
+</body>
+</html>

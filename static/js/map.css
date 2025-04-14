@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+}
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+h3 {
+  margin-left: 16px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  padding: 16px;
+}
+.alert-box {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.alert-box.highlight {
+  border: 2px solid #e74c3c;
+  background: #fff0f0;
+}
