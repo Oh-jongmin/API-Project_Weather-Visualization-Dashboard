@@ -48,6 +48,32 @@
 
 ---
 
+## 📡 사용 API
+
+- Open-Meteo - 날씨 예보 및 현재 기온, 풍속, 강수량 데이터
+- NASA FIRMS - 산불 정보 (위성 기반)
+- OpenStreetMap + Leaflet - 지도 시각화
+- Chart.js - 날씨 시계열 차트
+
+---
+
+## 🧠 배운 점
+- 실시간 데이터 API 처리 및 오류 핸들링
+- 사용자 위치 기반 지도 중심 이동 및 마커 표시
+- Leaflet.js와 Chart.js 연동을 통한 데이터 시각화 경험
+- Flask 기반 웹 서버 구성 및 템플릿 관리
+- 확장 가능한 모듈형 프론트엔드 구성 방식
+
+---
+
+💡 향후 확장 아이디어
+- 🌫️ 대기오염 정보 시각화 (OpenWeatherMap API)
+- 📦 캐싱 및 API 요청 최적화
+- 📱 모바일 반응형 대응
+- 🧭 위치 기반 푸시 알림 연동
+
+---
+
 ## ⚙️ 실행 방법
 
 ```bash
@@ -64,4 +90,4 @@ pip install -r requirements.txt
 python app.py
 
 # 4. 접속 확인
-http://localhost:5000
+http://localhost:5000  
