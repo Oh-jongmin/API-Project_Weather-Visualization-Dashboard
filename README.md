@@ -32,3 +32,33 @@
 ## 📂 프로젝트 구조
 
 📁 weather-visualization ├── app.py # Flask 백엔드 서버 ├── templates/ │ ├── map.html # 기상 정보 페이지 │ └── fires_map_korea.html # 산불 정보 페이지 (분리된 UI) ├── static/ │ ├── js/ │ │ ├── map.js # 날씨 지도 스크립트 │ │ ├── chart.js # 차트 시각화 스크립트 │ │ └── fires_map_korea.js # 산불 지도 스크립트 │ └── css/ │ └── style.css # 스타일시트
+
+## 🗺️ 페이지 구성
+
+### 1. 기상 정보 시각화 페이지 (`/map`)
+- 실시간 날씨 정보 지도 위 시각화
+- 지역 선택, 시간별 예보 카드, 날씨 상태별 아이콘 표시
+- 온도/풍속 차트 포함
+
+### 2. 산불 정보 시각화 페이지 (`/fires`)
+- NASA FIRMS API 연동
+- 대한민국 기준 산불 시각화
+- 🔥 신뢰도 및 밝기별 필터 기능
+- 🔄 기상 정보 페이지로 이동 가능 버튼
+
+---
+
+## ⚙️ 실행 방법
+
+```bash
+# 1. 프로젝트 클론
+git clone https://github.com/your-username/weather-visualization.git
+cd weather-visualization
+
+# 2. 가상환경 설정 및 패키지 설치
+python -m venv venv
+source venv/bin/activate  # (Windows는 venv\Scripts\activate)
+pip install -r requirements.txt
+
+# 3. 서버 실행
+python app.py
