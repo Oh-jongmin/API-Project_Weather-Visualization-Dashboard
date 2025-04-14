@@ -62,3 +62,6 @@ pip install -r requirements.txt
 
 # 3. 서버 실행
 python app.py
+
+# 4. 접속 확인
+http://localhost:5000
